@@ -18,7 +18,20 @@ function myFunction() {
 <button type="button" onclick="myFunction()">Click Me!</button>
 
 <p id="demo" Click below to go to Goolge</p>
-<a href="www.google.com/">Take me to Google site</a>
+
+<div class="nocursor">
+ <!-- some stuff -->
+</div>
+<style type="text/css">
+    .nocursor { cursor:none; }
+</style>
+
+<div id="nocursor"><!-- some stuff --></div>
+<script type="text/javascript">
+    document.getElementById('nocursor').style.cursor = 'none';
+</script>
+
+
 
 </body>
 </html> 
