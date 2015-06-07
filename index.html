@@ -15,22 +15,41 @@ function myFunction() {
 }
 </script>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("demo1");
+    x.style.fontSize = "25px";           
+    x.style.color = "green"; 
+}
+</script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("demo2");
+    x.style.fontSize = "25px";           
+    x.style.color = "blue"; 
+}
+</script>
+
 <button type="button" onclick="myFunction()">Click Me!</button>
-<br
-<h3>Check items from below</h3>
+<br><br>
+
+<h3>Check box items</h3>
 <INPUT TYPE=CHECKBOX NAME="mushrooms"   >mushrooms<BR>
 <INPUT TYPE=CHECKBOX NAME="greenpeppers">green peppers<BR>
 <INPUT TYPE=CHECKBOX NAME="olives"      >olives<BR>
 <INPUT TYPE=CHECKBOX NAME="onions"      >onions<P>
 <br>
 
-First name:<br>
-<input type="text" value="Mickey">
-<br>
-Last name:<br>
-<input type="text" name="lastname" value="Mouse">
+<p id="demo1">Hey, My First Name is Sreenivas, Last Name is Midde.</p>
 <br><br>
-<input type="submit" value="Submit">
+First Name:
+<input type="text" value="Sreenivas">
+<br>
+Last Name:
+<input type="text" name="lastname" value="Midde">
+<br><br>
+<button type="button" onclick="myFunction()">Submit</button>
 
 
 </body>
