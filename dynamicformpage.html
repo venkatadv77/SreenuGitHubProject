@@ -1,0 +1,77 @@
+
+<form method="post" style="width: 560px; height: 850px; margin-left: 10px; margin-top:10px">
+
+    <fieldset>
+        <legend>New User</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>User Name:</label></td>
+                <td>
+                    <input type="text" id="txtUserName" name="User Name" onblur="checkRequired(this)" maxlength="10" /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>First Name:</label></td>
+                <td>
+                    <input type="text" id="txtFirstName" name="First Name" maxlength="10" onblur="checkRequired(this)" /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Last Name:</label></td>
+                <td>
+                    <input type="text" id="txtLastName" name="Last Name" maxlength="10" onblur="checkRequired(this)" /></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Email: </label>
+                </td>
+                <td>
+                    <input type="text" name="emailInput" id="txtEmail" onblur="checkRequired(this)" /></td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <label for="lblAddress">Address</label></td>
+                <td>
+                    <textarea id="txtArea" name="txtAddress" cols="50" rows="5" maxlength="1000" onblur="checkRequired(this)"></textarea></td>
+					
+            </tr>
+
+
+            <tr>
+                <td>Groups</td>
+                <td>
+                    <select name="selGroups">
+                        <option value="c1">Employee</option>
+                        <option value="c1">HR</option>
+                        <option value="c1">Director</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <select name="selStatus">
+                        <option value="c1">Active</option>
+                        <option value="c2">Inactive</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="btnSubmit" value="Add User" type="submit" onclick="checkifFormIsFilled();" />
+                </td>
+                <td>
+                    <button id="btnCancel">Cancel</button>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+
+</form>
